@@ -1,15 +1,11 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginPageComponent } from './page/login-page.component';
+import { TaskPageComponent } from './page/task-page.component';
 
 const routes: Routes = [
   {
-    path: 'login',
-    component: LoginPageComponent
-  },
-  {
-    path: 'register',
-    component: LoginPageComponent
+    path: '',
+    component: TaskPageComponent
   }
 ];
 
@@ -17,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class AuthRoutingModule { }
+export class TaskRoutingModule { }
